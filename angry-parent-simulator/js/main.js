@@ -1,13 +1,10 @@
+document.querySelector('#yell').addEventListener('click', runYell);
 
-document.querySelector('#yell').addEventListener('click', combine)
+function runYell(){
+    let fn = document.querySelector('#firstName').value;
+    let fm = document.querySelector('#firstMiddle').value;
+    let lm = document.querySelector('#lastMiddle').value;
+    let ln = document.querySelector('#lastName').value;
 
-function combine(){
-
-    const fName = document.querySelector('#firstName').value
-    const fMid = document.querySelector('#firstMiddle').value
-    const lMid = document.querySelector('#lastMiddle').value
-    const lName = document.querySelector('#lastName').value
-
-    document.querySelector('#placeToYell').innerText = `${fName} ${fMid} ${lMid} ${lName}`
-
+    document.querySelector('#placeToYell').innerText = `${fn} ${fm} ${lm} ${ln}`; 
 }
