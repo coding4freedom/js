@@ -1,7 +1,7 @@
+document.querySelector('#finalRose').addEventListener('click', final)
 
-document.querySelector('#finalRose').addEventListener('click', rose)
-
-function rose(){
+function final(){
     document.querySelector('#claire').classList.add('hidden')
-    document.querySelector('#sharleen').classList.add('hidden')
+    document.querySelector('#nikki').classList.add('hidden')
+    // document.querySelector('#sharleen').classList.toggle('hidden')
 }
