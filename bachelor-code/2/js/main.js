@@ -1,26 +1,27 @@
-let andi = document.querySelector('#andiNext')
-let claire = document.querySelector('#claireNext')
-let sharleen = document.querySelector('#sharleenNext')
+document.querySelector('#andiNext').addEventListener('click', nextAndi)
+document.querySelector('#claireNext').addEventListener('click', nextClaireNext)
+document.querySelector('#sharleenNext').addEventListener('click', nextSharleenNext)
 
 
-andi.addEventListener('click', andiN)
-claire.addEventListener('click', claireN)
-sharleen.addEventListener('click', sharleenN)
+let andi = document.querySelector('#andi');
+let claire = document.querySelector('#claire');
+let sharleen = document.querySelector('#sharleen');
 
-function andiN(){
-    document.querySelector('#andi').classList.toggle('hidden')
-    document.querySelector('#claire').classList.add('hidden')
-    document.querySelector('#sharleen').classList.add('hidden')
+function nextAndi() {
+    // andi.classList.toggle('hidden')
+    claire.classList.add('hidden')
+    sharleen.classList.add('hidden')
+    andi.classList.toggle('hidden')
 }
 
-function claireN(){
-    document.querySelector('#claire').classList.toggle('hidden')
-    document.querySelector('#andi').classList.add('hidden')
-    document.querySelector('#sharleen').classList.add('hidden')
-}
+// function nextClaireNext() {
+//     claire.classList.toggle('hidden')
+//     andi.classList.add('hidden')
+//     sharleen.classList.add('hidden')
+// }
 
-function sharleenN(){
-    document.querySelector('#sharleen').classList.toggle('hidden')
-    document.querySelector('#andi').classList.add('hidden')
-    document.querySelector('#claire').classList.add('hidden')
-}
+// function nextSharleenNext() {
+//     sharleen.classList.toggle('hidden')
+//     andi.classList.add('hidden')
+//     claire.classList.add('hidden')
+// }
